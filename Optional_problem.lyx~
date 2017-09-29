@@ -1,0 +1,186 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Optional Python Review Exercise 
+\end_layout
+
+\begin_layout Paragraph
+This is an voluntary exercise that won't be marked nor it is part of your
+ course grades.
+ The aim of this exercise is to help you keep fresh your python programming
+ skills.
+ I will present you my solution to this problem as an excuse to review python
+ concepts in the last class of the course.
+ Keep in mind that this problem might prove to be more challenging than
+ the ones we have already discussed during the course.
+ Do not despair, you can solve it using the tools we have learned during
+ the course and note that it is far more complex that the one you will have
+ to solve for your final exam.
+ 
+\end_layout
+
+\begin_layout Paragraph
+The goal is to write a pyhton3 script than implements the Needleman-Wunsch
+ algorithm for sequence alignment.
+ Although this may seem to be a daunting task, in fact it is quite easy
+ if you have a 
+\begin_inset Quotes eld
+\end_inset
+
+recipe
+\begin_inset Quotes erd
+\end_inset
+
+ for this algorithm.
+\end_layout
+
+\begin_layout Paragraph
+I suggest you to use read the wikipedia entry for the Needleman-Wunch algorithm
+ at:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://en.wikipedia.org/wiki/Needleman%E2%80%93Wunsch_algorithm
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+In addition to a clear and detailed step-by-step explanation of the Needleman-Wu
+nsch procedure, it also contains the 
+\emph on
+pseudocode
+\emph default
+ for the algorithm.
+ A pseudo-code is a like a general template that contains the basic steps
+ that any program needs to follow in order to produce the expected result
+ (in this case the alignment of two sequences).
+ The only thing you actually have to do is 
+\begin_inset Quotes eld
+\end_inset
+
+substitute
+\begin_inset Quotes erd
+\end_inset
+
+ the lines in this template with code for a specific language (in our case
+ python3).
+\end_layout
+
+\begin_layout Paragraph
+You can also take a look at the excellent (an short!) paper 
+\begin_inset Quotes eld
+\end_inset
+
+What is dynamic programming?
+\begin_inset Quotes erd
+\end_inset
+
+ by Sean R.
+ Eddy (NATURE BIOTECHNOLOGY VOLUME 22 NUMBER 7 JULY 2004).
+ This paper also provides an implementation of the Needleman-Wunsch algorithm
+ in C, so you can use it as an additional source of inspiration.
+ I uploaded both, the paper and C code in the course Moodle page.
+ 
+\end_layout
+
+\begin_layout Paragraph
+Finally, you can implement the algorithm as simple or complex as you wish
+ (e.g.
+ only aligns nucleotides with a fixed substitution matrix or allows for
+ any kind of string and substitution matrix, provide fixed gap penalties
+ or user-provided,...).
+ In any case I would advise you to start writing the simplest possible code
+ and then, if you wish, extent it.
+ If you make this first version modular, you should be able to extend it
+ quite easily.
+\end_layout
+
+\begin_layout Paragraph
+We hope that, in addition to being useful for HPBBM, this assignment will
+ help you gain a deeper understanding of sequence alignment and dynamic
+ programming for your BIBMS course.
+\end_layout
+
+\begin_layout Paragraph
+Happy coding!
+\end_layout
+
+\end_body
+\end_document

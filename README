@@ -1,0 +1,2 @@
+The wikipedia entry for the Needleman-Wunch algorithm (http://en.wikipedia.org/wiki/Needleman%E2%80%93Wunsch_algorithm) contains the peudocode for the algorithm. 
+The article by Eddy also explains how this algorithm works and provides an implementation in C.

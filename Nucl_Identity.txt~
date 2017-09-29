@@ -1,0 +1,3 @@
+The wikipedia entry for the Needleman-Wunch algorithm (http://en.wikipedia.org/wiki/Needleman%E2%80%93Wunsch_algorithm) contains the peudocode for the algorithm. 
+Write a python script based on this pseudocode that implements the Needleman-Wunch algorithm so that it returns the alignment between two nucleotide strings.
+The article by Eddy also explains how this algorithm works and provides an implementation in C that you can use as a model.
