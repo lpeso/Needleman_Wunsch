@@ -1,11 +1,9 @@
 #! /usr/bin/python3
 # Luis del Peso
-# Dec 2015
+# November 2014
 # Implemmentation of the Needleman-Wunch for global sequence alignment
-# Based on the pseudocode on:
+# Based on the pseudocode in:
 # http://en.wikipedia.org/wiki/Needleman%E2%80%93Wunsch_algorithm
-# run as:
-# python3 Needleman_Wunsch_v4.py Scoring_Matrix Sequnece1 Sequence2 gap_penalty
 
 def Fmatrix(Seq1,Seq2,SubMat,GapPen):# Generates the Score Matrix (F matrix)
     ScoreMatrix=[] #Initializes empty Score matrix
@@ -30,7 +28,7 @@ def Fmatrix(Seq1,Seq2,SubMat,GapPen):# Generates the Score Matrix (F matrix)
             ScoreMatrix[i][j]=max(Match,Delete,Insert) #cell value is the max
     return(ScoreMatrix)
 
-def GetSM(FileName):#reads and returns Scoring Matrix
+def GetSM(FileName):
     SubstMatrix={}#Initializes empty dictionary (elememts will be dictionaries)
     MyFile=open(FileName,"r")
     header=MyFile.readline()
@@ -93,15 +91,14 @@ def Alignment(ScoreMatrix,Seq1,Seq2,SubMat,GapPen):#generates the alignment
     return(AlSeq1,AlSeq2)
     
 import sys
-SubstMatrix=GetSM(sys.argv[1])#read Scoring Matrix
+SubstMatrix=GetSM(sys.argv[1])
 print(SubstMatrix)
+GapPenalty=-1
 Seq1=GetSeq(sys.argv[2])
 Seq2=GetSeq(sys.argv[3])
-GapPenalty=int(sys.argv[4])
 resFmatrix=Fmatrix(Seq1,Seq2,SubstMatrix,GapPenalty)
 #print(resFmatrix)
 PrintMatrix(resFmatrix,Seq1,Seq2)
 AlignSeq1,AlignSeq2=Alignment(resFmatrix,Seq1,Seq2,SubstMatrix,GapPenalty)
 print("Seq1\t",AlignSeq1)
 print("Seq2\t",AlignSeq2)
-
